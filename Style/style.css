@@ -1,0 +1,12 @@
+body{
+    background-color: lightblue;
+    font-family: "Smooch Sans";
+    /*adds big space under everything to scroll*/
+    margin-bottom: 100vh;
+
+    /*custom property, start with "--"
+    useful example for resuing colors, and makes changing colours super easy*/
+    --hue: 315;
+    --main-color: hsl(var(--hue), 80%, 80%); /*idk changing hues. Helps make colours match*/
+    --dark-color: purple;
+}
