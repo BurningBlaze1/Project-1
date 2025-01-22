@@ -1,0 +1,21 @@
+body{
+    background-color: var(--main-color);
+
+    --main-color: paleturquoise;
+    --second-color: #E0FF2C;
+}
+
+h1{
+    text-align:center;
+}
+
+h2{
+   text-align:center; 
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 50px;
+    margin: 50px;
+}
