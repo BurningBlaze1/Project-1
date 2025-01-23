@@ -1,16 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+
 body{
     background-color: var(--main-color);
+    font-family: "Josefin Sans";
+
 
     --main-color: paleturquoise;
     --second-color: #E0FF2C;
 }
 
+header {
+    position: sticky;
+    top:0;
+    z-index: 15;
+    font-family: "RocknRoll One";
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: var(--second-color);
+    box-shadow: 0 3px 3px rgba(1, 63, 89, 0.284);
+    font-size : 30px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none; /*defaults to underline. none will remove underline*/
+}
+
+nav a:hover {
+    font-size: 1em;
+    transform: scale(1.2); /*changes the size of the text when you hover over it*/
+    color : red; /*hover color*/
+}
+
+
+a:visited { /*links you have already visited will become this color*/
+    color: #6709ae;
+
+}
+
+p{
+    font-size: 17px;
+    font-weight:bold;
+    text-align:center;
+}
+
 h1{
     text-align:center;
+    margin-top:25px;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px white;
 }
 
 h2{
    text-align:center; 
+   font-family: "RocknRoll One";
+   padding: 15px;
+   
+}
+
+.box1 {
+    align-content: center;
+    background-color: var(--second-color);
+    padding: 15px;
+    border: 3px solid white;
+    border-radius:10px;
+}
+
+.box2 {
+    background-color: var(--second-color);
+    padding: 15px;
+    border: 3px solid white;
+    border-radius:10px;
 }
 
 .grid {
@@ -18,4 +85,13 @@ h2{
     grid-template-columns: 1fr 1fr;
     gap : 50px;
     margin: 50px;
+}
+
+table {
+    text-align: left;
+    background-color: darkorange;
+}
+
+table tr {
+    background-color: white;
 }
