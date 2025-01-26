@@ -9,6 +9,10 @@ body{
 
     --main-color: paleturquoise;
     --second-color: #E0FF2C;
+
+    margin-bottom:100vh;
+   
+   
 }
 
 header {
@@ -16,6 +20,7 @@ header {
     top:0;
     z-index: 15;
     font-family: "RocknRoll One";
+  
 }
 
 nav{
@@ -32,22 +37,25 @@ nav{
 nav a {
     color: black;
     text-decoration: none; /*defaults to underline. none will remove underline*/
+    text-decoration: underline black;
 }
 
 nav a:hover {
     font-size: 1em;
     transform: scale(1.2); /*changes the size of the text when you hover over it*/
     color : red; /*hover color*/
+    text-decoration: underline red;
 }
 
 
 a:visited { /*links you have already visited will become this color*/
     color: #6709ae;
+    text-decoration: underline purple;
 
 }
 
 p{
-    font-size: 17px;
+    font-size: 20px;
     font-weight:bold;
     text-align:center;
 }
@@ -59,13 +67,25 @@ h1{
     text-shadow: 2px 2px 3px white;
     background-color: var(--second-color);
     border: 2px solid white;
+    
 }
 
 h2{
    text-align:center; 
    font-family: "RocknRoll One";
    padding: 15px;
-   
+}
+
+h3{
+    font-family: "RocknRoll One";
+    font-size:30px;
+    padding:30px;
+    margin-top:15px;
+    margin-bottom:20px;
+    margin-left:20px;
+    margin-right:20px;
+    background-color: rgb(255, 255, 162);
+    
 }
 
 .box1 {
@@ -74,13 +94,17 @@ h2{
     padding: 15px;
     border: 3px solid red;
     border-radius:10px;
+    box-shadow : 0 6px 8px black;
 }
 
 .box2 {
+    align-content: center;
     background-color: var(--second-color);
     padding: 15px;
     border: 3px solid red;
     border-radius:10px;
+    box-shadow : 0 6px 8px black;
+   
 }
 
 .grid {
@@ -88,12 +112,18 @@ h2{
     grid-template-columns: 1fr 1fr;
     gap : 50px;
     margin: 50px;
+    border-radius: 10px;
+    
 }
 
 table {
     text-align: left;
     background-color: darkorange;
     margin:auto;
+    font-size:20px;
+    padding: 2px;
+    margin-bottom:50px;
+    margin-top:20px;
 }
 
 table tr {
@@ -102,4 +132,79 @@ table tr {
 
 .image1 {
 margin:auto;
+}
+
+
+.image2 {
+    margin:auto;
+    }
+
+.image3 {
+        margin:auto;
+        }
+
+.firstline {
+    font-size: 25px;
+    margin:20px;
+}
+
+.video1 {
+    align-content: center;
+   padding:40px;
+    background-color: orange;
+    margin:auto;
+    border:solid 3px white;
+    border-radius: 15px;
+}
+
+.caption {
+    background-color: var(--second-color);
+    padding:10px;
+    font-size: 30px;
+    margin:auto;
+}
+
+.trueform {
+position:absolute;
+margin-top:1000px;
+        }
+       
+.duck {
+    position:absolute;
+    margin-top:1000px;
+   opacity:0;
+}
+
+.duck:hover {
+    animation: animation1 15s;
+    }
+
+@keyframes animation1 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.secretcaption {
+    position:absolute;
+    font-size:30px;
+    margin-top: 1410px;
+    padding-bottom:50px;
+}
+
+.funfacts{
+    border-radius: 10px;
+    /* margin-left:650px;
+    margin-right:650px;
+    margin-top:120px; */
+    padding:22px;
+    /* background-color:orange; */
+    border: dashed 5px white;
+    
+}
+
+
+.subaruactivities{
+    text-align: left;
+    margin-left:60px;
+    padding:20px;
 }
